@@ -18,22 +18,207 @@
 <body>
     <div class="reveal">
         <div class="slides">
-            <section id="stackedit" data-autoslide="276000">
+            <!-- <section id="stackedit" data-autoslide="276000">
                 <p>Accessible Math and Content Authoring with Markdown</p>
                 <video width="95%" controls autoplay loop>
   <source src="./assets/stackedit.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
 </video>
-            </section>
+            </section> -->
             <section>
-                <h1 class="fragment" data-fragment-index="2"><small>Accessible Math Using Markdown</small></h1>
-                <blockquote>Create accessible documents and content that can be easily edited in Brightspace (D2L) and can be read by screenreaders.</blockquote>
-                <p class="fragment" data-fragment-index="2">\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\] </p>
+                <h1 ><small>Accessible Math Using Markdown</small></h1>
+                <p class="fragment" data-fragment-index="2">Create accessible documents and content that can be easily edited in a Learning Management System and can be read by screenreaders.</p>
+                <p class="fragment" data-fragment-index="2">\[\int_0^3\left(\frac{x^3}4-2x^2-e^x\right)\;\operatorname dx\;\] </p>
             </section>
+
+
+ <section>
+                <h2>Components of a Math Document:</h2>
+                <p>Text</p>
+                <p>Equations</p>
+                <p>Tables</p>
+                <p>Images</p>
+            </section>
+
+
+<section>
+                <h2>Compnents of a Math Document:</h2>
+                <p>Text: Formatting/navigation Issues</p>
+                <p>Equations: Screen Reader Issues</p>
+                <p>Tables: Screen Reader Issues</p>
+                <p>Images: Alternate Text</p>
+            </section>
+
+
+
+
+<section>
+                <h1><small>Where We Started</small></h1>
+             <!-- <img class="fragment" src="./assets/word.jpg" alt="screenshot of a word document"> -->
+           <p class="fragment" data-fragment-index="2">MathType</p>
+           <ul class="fragment" data-fragment-index="2">
+               <li class="fragment" data-fragment-index="2">Sometimes screenreader would read it.</li>
+               <li class="fragment" data-fragment-index="2">Not always well</li>
+               <li class="fragment" data-fragment-index="2">Student had to have player installed</li>
+               <li class="fragment" data-fragment-index="2">Had to be on every computer used</li>
+           </ul>
+                <!-- <img src="./assets/pdf.jpg" alt="screenshot of a pdf of a handwritten key document"> -->
+            </section>
+
+
+<section>
+                <h2>Google Docs</h2>
+
+                <ul>
+<li>Supports LaTeX</li>
+<li>Allows poor accessibility practices (i.e. multiple returns, spacing, etc.)</li>
+                </ul>
+<p> Markdown guides you to create an accessible document without these issues. </p>
+            </section>
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
             <section id="what">
-                <h2 class="fragment" data-fragment-index="2">What is Markdown?</h2>
-                <blockquote>MarkDown is a text-to-HTML conversion tool. MarkDown allows you to write using an easy-to read, easy-to-write plain text format, then converts it to structurally valid XHTML (or HTML). <small>-daringfireball.net</small></blockquote>
+                <h2>What is Markdown?</h2>
+                <p class="fragment" data-fragment-index="2">MarkDown is a text-to-HTML conversion tool.</p> 
+                <p class="fragment" data-fragment-index="2">MarkDown allows you to write using an:</p>
+                 
+                     <p class="fragment" data-fragment-index="2">easy-to read
+                         
+                     </p>
+                     <p class="fragment" data-fragment-index="2">easy-to-write</p>
+                    <p class="fragment" data-fragment-index="2">plain text format</p> 
+                    <p class="fragment" data-fragment-index="2"> that converts it to structurally valid XHTML (or HTML).</p> <small class="fragment" data-fragment-index="2">-daringfireball.net</small></blockquote>
             </section>
+
+
+            <section id="why">
+                <h2>Why Markdown?</h2>
+                <p class="fragment" data-fragment-index="2">Markdown is <em>plain-text</em>: margins, tab stops, page breaks, extra spacing, and formatting are all unsupported, ignored and therefore dropped. This is limiting but also helpful with <strong>accessibility</strong>. </p>
+
+            </section>
+
+ <section>
+                <h2>Text</h2>
+
+            
+            </section>
+
+
+
+
+
+  
+            <section>
+                <h2>Equations</h2>
+                <h3>Wiris Equation Editor</h3>
+
+                <p>To edit and create our formulas we use the <a target="_blank" href="http://www.wiris.com/editor/demo/en/mathml-latex" target="_blank">Wiris editor</a>. This can also be used to copy equations that were previously made in MS Word using third-party plugins. Once we use the editor we have the <em>tex</em> code to paste into our markdown file.</p>
+                <img class="fragment" src="./assets/wiris.jpg" alt="screenshot of wiris editor webpage producing mathml and latex code">
+            </section>
+
+
+
+<section id="example">
+                <h2>Example Equation</h2>
+                <p>Right click on the math formula to see more options.</p>
+                <p>\[\int_0^3\left(\frac{x^3}4-2x^2-e^x\right)dx\]</p>
+                <div class="fragment">
+                    <hr>
+                    <p>Listen to the Jaws screenreader process the above formula:</p>
+                    <audio controls>
+                        <source src="./assets/mathexample.mp3" type="audio/mp3"> Your browser does not support the audio element.
+                        </audio>
+                </div>
+                <div class="fragment">
+                    <hr>
+                    <p>The above formula is written using <em>tex</em> or <em>latex</em> code. <code>\int_0^3\left(\frac{x^3}4-2x^2-e^x\right)dx</code></p>
+                    <p><small>Don't worry we don't need to learn <em>tex</em> code!</small></p>
+                </div>
+            </section>
+
+
+
+
+            <section>
+                <h2>Equations</h2>
+                  <h3>  MathType to LaTex</h3>
+
+                <!-- <p>To edit and create our formulas we use the <a target="_blank" href="http://www.wiris.com/editor/demo/en/mathml-latex" target="_blank">Wiris editor</a>. This can also be used to copy equations that were previously made in MS Word using third-party plugins. Once we use the editor we have the <em>tex</em> code to paste into our markdown file.</p>
+                <img class="fragment" src="./assets/wiris.jpg" alt="screenshot of wiris editor webpage producing mathml and latex code"> -->
+            </section>
+
+
+
+
+            <section>
+               
+               <h2>Tables</h2> 
+               <h3>HTML Table Generator</h3>
+
+                <p>To edit and create tables we use the <a target="_blank" href="http://www.tablesgenerator.com/html_tables" target="_blank">HTML Table Generator</a>.  </p>
+                <img class="fragment" src="./assets/tablegenerator.jpg" alt="screenshot of table generator webpage producing html code">
+            </section>
+
+
+
+
+            <section>
+               
+               <h2>Images</h2> 
+               
+            </section>
+
+
+
+            <section>
+               <h2>Building an HTTML Document</h2>
+               <h3>Putting Components Together</h3> 
+               <ul>
+<li>LMS</li>
+<li>Markdown Editor</li>
+<ul>
+    <li>StackEdit</li>
+    <li>Markdown Pad</li>
+    <li>Marked</li>
+</ul>
+<li>Web Snippet Tools</li>
+<ul>
+    <li>Code Pen</li>
+    <li>Fiddle</li>
+
+
+</ul>
+<li>TheJoshDean</li>
+
+
+
+               </ul>
+               
+            </section>
+
+
+
+
+  
+            <section>
+               
+               <h2>Code Pen</h2> 
+              
+            </section>          
+
+
+
             <section id="look">
                 <h2 class="fragment" data-fragment-index="2">What Does Markdown Look Like?</h2>
                 <pre><code># This is a Heading 1
@@ -51,11 +236,7 @@ This is an image:
            </code></pre>
 
             </section>
-            <section id="why">
-                <h2 class="fragment" data-fragment-index="2">Why Markdown?</h2>
-                <p>Markdown is <em>plain-text</em>: margins, tab stops, page breaks, extra spacing, and formatting are all unsupported, ignored and therefore dropped. This is limiting but also helpful with <strong>accessibility</strong>. </p>
-
-            </section>
+         
             <section>
                 <h2 class="fragment" data-fragment-index="2">Why Markdown cont..</h2>
                 <p>Multiple spaces, or line breaks in a markdown file are ignored when converted to an HTML document. A Word document copied into a markdown editor is stripped of all formatting and flourishes. </p>
@@ -63,30 +244,9 @@ This is an image:
 
 
             </section>
-            <section id="example">
-                <h2>Math Example</h2>
-                <p>Right click on the math formula to see more options.</p>
-                <p>\[\int_0^3\left(\frac{x^3}4-2x^2-e^x\right)dx\]</p>
-                <div class="fragment">
-                    <hr>
-                    <p>Listen to the Jaws screenreader process the above formula:</p>
-                    <audio controls>
-                        <source src="./assets/mathexample.mp3" type="audio/mp3"> Your browser does not support the audio element.
-                        </audio>
-                </div>
-                <div class="fragment">
-                    <hr>
-                    <p>The above formula is written using <em>tex</em> or <em>latex</em> code. <code>\int_0^3\left(\frac{x^3}4-2x^2-e^x\right)dx</code></p>
-                    <p><small>Don't worry we don't need to learn <em>tex</em> code!</small></p>
-                </div>
-            </section>
+            
 
-            <section>
-                <h2>Wiris HTML Editor</h2>
-
-                <p>To edit and create our formulas we use the <a target="_blank" href="http://www.wiris.com/editor/demo/en/mathml-latex" target="_blank">Wiris editor</a>. This can also be used to copy equations that were previously made in MS Word using third-party plugins. Once we use the editor we have the <em>tex</em> code to paste into our markdown file.</p>
-                <img class="fragment" src="./assets/wiris.jpg" alt="screenshot of wiris editor webpage producing mathml and latex code">
-            </section>
+          
 
             <section id="further1">
                 <h2>Further Reading and Tools</h2>
