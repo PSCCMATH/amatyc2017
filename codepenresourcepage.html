@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown Reference</title>
+   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+
+<style>
+body{
+/*   font-size: 56px; */
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  line-height: .9;
+  margin: 8px;
+/*   font-size: 1em; */
+}
+
+h1{font-size: 48px;
+padding-bottom: 4rem;}
+h2{font-size: 42px;}
+
+p{
+  font-size: 22px;
+  line-height: 24px;
+}
+
+/* .row{
+  margin-top: 10px;
+} */
+</style>
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container-fluid">
+  <h1>CodePen Markdown Guide</h1>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <p><strong>Item</strong></p>
+    </div>
+    <div class="col-xs-4">
+      <p><strong>Markdown</strong></p>
+
+    </div>
+
+    <div class="col-xs-4">
+      <p><strong>HTML Equivalent</strong></p>
+    </div>
+  </div>
+  <h2>Headers</h2>
+  <br>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <p>Heading 1</p>
+    </div>
+    <div class="col-xs-4">
+      <p># Text</p>
+    </div>
+
+    <div class="col-xs-4">
+      <p><code>&lt;h1&gt;Text&lt;/h1&gt;</code></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <p>Heading 2</p>
+    </div>
+    <div class="col-xs-4">
+      <p>## Text</p>
+    </div>
+
+    <div class="col-xs-4">
+      <p><code>&lt;h2&gt;Text&lt;/h2&gt;</code></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <p>Heading 3</p>
+    </div>
+    <div class="col-xs-4">
+      <p>### Text</p>
+    </div>
+
+    <div class="col-xs-4">
+      <p><code>&lt;h3&gt;Text&lt;/h3&gt;</code></p>
+    </div>
+  </div>
+
+  <h2>Emphasis</h2>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <p>Italics</p>
+    </div>
+    <div class="col-xs-4">
+      <p>*Text* or _Text_</p>
+    </div>
+
+    <div class="col-xs-4">
+      <p><code>&lt;em&gt;Text&lt;/em&gt;</code></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4">
+      <p>Bold</p>
+    </div>
+    <div class="col-xs-4">
+      <p>**Text** or __Text__</p>
+    </div>
+
+    <div class="col-xs-4">
+      <p><code>&lt;strong&gt;Text&lt;/strong&gt;</code></p>
+    </div>
+  </div>
+
+  <h2>Lists</h2>
+  <p>Unordered List</p>
+  <div class="row">
+    <div class="col-xs-4">
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ul>
+          <li>A subitem</li>
+        </ul>
+        <li>Another Item</li>
+      </ul>
+    </div>
+    <div class="col-xs-4">
+      <p>* Item 1 <br> * Item 2 <br> &nbsp;&nbsp;&nbsp;* A subitem<br> * Another Item</p>
+
+    </div>
+
+    <div class="col-xs-4">
+      <p><code>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+                  <br>&lt;ul&gt;&lt;li&gt;A subitem&lt;/li&gt;&lt;/ul&gt;
+          &lt;li&gt;Another Item&lt;/li&gt;&lt;/ul&gt;</code></p>
+    </div>
+  </div>
+
+  <p>Ordered List</p>
+  <div class="row">
+    <div class="col-xs-4">
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ol style="list-style-type: lower-alpha;">
+          <li>A subitem</li>
+        </ol>
+        <li>Another Item</li>
+      </ol>
+    </div>
+    <div class="col-xs-4">
+      <p>1. Item 1
+        <br> 2. Item 2
+        <br>&nbsp;&nbsp;&nbsp; 1. A subitem
+        <br> 3. Another Item</p>
+
+    </div>
+
+    <div class="col-xs-4">
+      <p><code>&lt;ol&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;ul&gt;&lt;li&gt;A subitem&lt;/li&gt;<br>
+
+
+&lt;li&gt;Another Item&lt;/li&gt;&lt;/ol&gt;</code></p>
+    </div>
+  </div>
+
+  <h2>Links</h2>
+
+
+  <div class="row">
+    <div class="col-xs-4">
+      <p> <a href="https://google.com">Google Search</a></p>
+    </div>
+    <div class="col-xs-4">
+
+      <p>[Google Search](https://google.com)</p>
+    </div>
+
+    <div class="col-xs-4">
+      
+      <p><code>&lt;a href=&quot;https://google.com&quot;&gt;Google Search&lt;/a&gt;</code></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <p> <a href="https://google.com" title="Search">Google Search</a></p>
+    </div>
+    <div class="col-xs-4">
+
+      <p>[Google Search](https://google.com "Search")</p>
+    </div>
+
+    <div class="col-xs-4">
+      
+      <p><code>&lt;a href=&quot;https://google.com&quot; title=&quot;Search&quot;&gt;Google Search&lt;/a&gt;</code></p>
+      
+    </div>
+  </div>
+
+  <h2>Images</h2>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <img style="height:60px;" src="images/notes/u4s5p5.png" alt="graph of y=-x-3 and y=0 on the interval from -7 to 2">
+      
+    </div>
+    <div class="col-xs-4">
+      <p>![Alternate Text](/path/to/image.jpg "Optional Hover Title")</p>
+      <p>![graph of y=-x-3 and y=0 on the interval from -7 to 2](images/notes/u4s5p5.png "Graph of the two functions")</p>
+
+    </div>
+
+    <div class="col-xs-4">
+      <p><code> &lt;img src=&quot;images/notes/u4s5p5.png&quot; alt=&quot;graph of y=-x-3 and y=0 on the interval from -7 to 2&quot; title=&quot;Graph of the two functions&quot; /&gt;</code></p>
+    </div>
+  </div>
+
+  <h2>Tables</h2>
+  <div class="row">
+    <div class="col-xs-4">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Billy</td>
+            <td>Rogers</td>
+          </tr>
+          <tr>
+            <td>Sally</td>
+            <td>Straum</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-xs-4">
+      <p>First Name | Last Name<br> --|--
+        <br> Billy | Rogers<br> Sally | Straum </p>
+
+    </div>
+
+    <div class="col-xs-4">
+      <p><code>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+  &lt;th&gt;First Name&lt;/th&gt;
+  &lt;th&gt;Last Name&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+  &lt;td&gt;Billy&lt;/td&gt;
+  &lt;td&gt;Rogers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;Sally&lt;/td&gt;
+  &lt;td&gt;Straum&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</code></p>
+    </div>
+  </div>
+
+  <h2>Math Equations</h2>
+
+  <div class="row">
+    <div class="col-xs-4">
+     <p>\[\begin{align}&amp;\int_1^4 {{x^3}} dx\end{align}\]</p>
+      
+    </div>
+    <div class="col-xs-4">
+      <p><strong>Centered:</strong> \\[LaTeX math equation\\] </p>
+      <p><strong>Inline:</strong> \\(LaTeX math equation\\) </p>
+     <p>\\[\begin{align}&amp;\int_1^4 {{x^3}} dx\end{align}\\]</p> 
+    </div>
+
+    <div class="col-xs-4">
+      <p><code>\[\begin{align}&amp;\int_1^4 {{x^3}} dx\end{align}\]</code></p>
+    </div>
+  </div>
+  
+  <h2>Horizontal Rule</h2>
+  <div class="row">
+    <div class="col-xs-4">
+      <hr />
+    </div>
+    <div class="col-xs-4">
+
+      <p>***</p>
+    </div>
+
+    <div class="col-xs-4">
+      <p><code>  &lt;hr /&gt;</code></p>
+    </div>
+  </div>
+
+  <h2>Blockquote</h2>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <blockquote>
+        <p>This is a quote for emphasis</p>
+      </blockquote>
+    </div>
+    <div class="col-xs-4">
+      <p>&gt;&nbsp;&nbsp;This is a quote for emphasis</p>
+
+    </div>
+
+    <div class="col-xs-4">
+      <p><code>  &lt;blockquote&gt;
+        &lt;p&gt;This is a quote for emphasis&lt;/p&gt;
+      &lt;/blockquote&gt;</code></p>
+    </div>
+  </div>
+  <!--       Ending of container div -->
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML'></script>
+
+  
+</body>
+</html>
