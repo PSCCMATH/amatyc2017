@@ -5,3 +5,7 @@ img {
     width: 70%;
     max-width: 300px;
 }
+
+input {
+    width: 60%;
+}
