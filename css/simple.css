@@ -15,13 +15,13 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 body {
   background: #fff;
-  background-color: #fff; }
+  background-color: #000; }
 
 .reveal {
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-weight: normal;
-  color: #000; }
+  color: #fff; }
 
 ::selection {
   color: #fff;
@@ -48,7 +48,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #000;
+  color: #fff;
   font-family: "News Cycle", Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
@@ -213,7 +213,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #00008B;
+  color: #80b3ff;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
